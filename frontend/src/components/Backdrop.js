@@ -1,8 +1,8 @@
 import './Backdrop.css';
 
-const Backdrop = () => {
-    return (
-        <div className='backdrop'>
+const Backdrop = ({show, click}) => {
+    return show && (
+        <div className='backdrop' onClick={click}>
             
         </div>
     );
